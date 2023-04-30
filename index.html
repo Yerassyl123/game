@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <div class="haeder-wrapper">
+            <div class="logo">
+                Sudoku
+            </div>
+            <div id="stats" class="stats">
+                <p id="timer" class="text-animation"></p>
+                <p id="lives" class="text-animation"></p>
+            </div>
+        </div>
+        <div class="container">
+            <div id="game" class="sidebar">
+                <div id="game-radio" class="game-actions">
+                    <div id="diff">
+                        <h3>Уровень сложности:</h3>
+                        <label class="radio">
+                            <input id="diff-1" type="radio" name="diff" value="easy" checked />
+                            <span class="radio-label">Легкий</span>
+                        </label>
+                        <label class="radio">
+                            <input id="diff-2" type="radio" name="diff" value="medium" />
+                            <span class="radio-label">Норм</span>
+                        </label>
+                        <label class="radio">
+                            <input id="diff-3" type="radio" name="diff" value="hard" />
+                            <span class="radio-label">Тяжелый</span>
+                        </label>
+                    </div>
+
+                    <div id="time">
+                        <h3>Время:</h3>
+                        <label class="radio">
+                            <input id="time-1" type="radio" name="time" value="three" checked />
+                            <span class="radio-label">3 Мин</span>
+                        </label>
+                        <label class="radio">
+                            <input id="time-2" type="radio" name="time" value="five" />
+                            <span class="radio-label">5 Мин</span>
+                        </label>
+                        <label class="radio">
+                            <input id="time-3" type="radio" name="time" value="ten" />
+                            <span class="radio-label">10 Мин</span>
+                        </label>
+                    </div>
+
+                    <div id="theme">
+                        <h3>Тема:</h3>
+                        <label class="radio">
+                            <input id="theme-1" type="radio" name="theme" value="light" checked />
+                            <span class="radio-label">Светлая</span>
+                        </label>
+                        <label class="radio">
+                            <input id="theme-2" type="radio" name="theme" value="dark" />
+                            <span class="radio-label">Темная</span>
+                        </label>
+                    </div>
+                    <div class="game-btn-container">
+                        <button id="start-btn" class="game-btn">Новая Игра</button>
+                    </div>
+                </div>
+            </div>
+            <div class="board-wrapper">
+                <div id="board"></div>
+            </div>
+            <div id="number-container" class="number-container hidden">
+                <p id="one">1</p>
+                <p id="two">2</p>
+                <p id="three">3</p>
+                <p id="four">4</p>
+                <p id="five">5</p>
+                <p id="six">6</p>
+                <p id="seven">7</p>
+                <p id="eight">8</p>
+                <p id="nine">9</p>
+            </div>
+        </div>
+        
+        <footer> 
+            Tips: Для изменения расстановки цифр необходимо перезагрузить страницу
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
